@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+    <!-- Scripts for image hover states & email validation -->
+
+    <script>
+      function onClick() {
+
+        var inputValue = document.getElementById('input-email').value;
+        var errorMsg = document.getElementById('error');
+
+        /* https://www.w3resource.com/javascript/form/email-validation.php */
+
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputValue)) {
+          errorMsg.style.display = "none";
+        }
+        else {
+          errorMsg.style.display = "block";
+        }
+      }
+
+      function mouseOverArrow(id) { document.getElementById(id).src = 'images/' + id + '-hover.svg'; }
+      function mouseOutArrow(id) { document.getElementById(id).src = 'images/' + id + '.svg';  }
+    </script>
+
+  </head>
+  
+  <body>
+
+    <header>
+
+      <img src="images/logo.svg" alt="fylo-logo">
+      <div class="item-a">Features</div>
+      <div class="item-b">Team</div>
+      <div class="item-c">Sign In</div>
+
+    </header>
+
+    <main>
+      
+      <div class="block-a">
+
+        <img src="images/illustration-intro.png" alt="illustration-intro">
+        <h1>All your files in one secure location,<br>accessible anywhere.</h1>
+        <div>
+          Fylo stores all your most important files in one secure location.<br>Access them wherever 
+          you need, share and collaborate with<br>friends family, and co-workers.
+        </div>
+        <button class="btn">Get Started</button>
+
+      </div>
+  
+      <div class="block-b">
+
+        <img class="a" src="images/icon-access-anywhere.svg" alt="icon-access-anywhere">
+        <h2 class="a">Access your files, anywhere</h2>  
+        <div class="a">
+          The ability to use a smartphone, tablet, or computer to access your account means your 
+          files follow you everywhere.
+        </div>
+
+        <img class="b" src="images/icon-security.svg" alt="icon-security">   
+        <h2 class="b">Security you can trust</h2>   
+        <div class="b">
+          2-factor authentication and user-controlled encryption are just a couple of the security 
+          features we allow to help secure your files.
+        </div>
+
+        <img class="c" src="images/icon-collaboration.svg" alt="icon-collaboration">   
+        <h2 class="c">Real-time collaboration</h2>    
+        <div class="c">
+          Securely share files and folders with friends, family and colleagues for live collaboration. 
+          No email attachments required.
+        </div>
+
+        <img class="d" src="images/icon-any-file.svg" alt="icon-any-file">   
+        <h2 class="d">Store any type of file</h2>   
+        <div class="d">
+          Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
+          file types to be securely stored and shared.
+        </div>
+
+      </div>
+  
+      <div class="block-c">
+
+        <img src="images/illustration-stay-productive.png" alt="illustration-stay-productive">
+
+        <div class="a">
+
+          <h1>Stay productive, wherever you are</h1>
+          <div>
+            Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+            storage needs.
+          </div>
+
+        </div>
+    
+        <div class="b">
+
+          <div>
+            Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+            attachments required.
+          </div>
+
+          <a href="#" onmouseover="mouseOverArrow('icon-arrow')" onmouseout="mouseOutArrow('icon-arrow')">
+            See how Fylo works
+            <img id="icon-arrow" src="images/icon-arrow.svg" alt="icon-arrow">
+          </a>
+
+        </div>
+
+      </div>
+  
+      <div class="block-d">
+        
+        <div class="card">
+          
+          <div class="text">
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+            become a well-oiled collaboration machine.
+          </div>
+      
+          <div class="person">
+            <img src="images/profile-1.jpg" alt="satish-patel">
+            <div>
+              <div class="name">Satish Patel</div>
+              <div class="position">Founder & CEO, Huddle</div>
+            </div>
+          </div>
+
+        </div>
+    
+        <div class="card">
+          
+          <div class="text">
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+            become a well-oiled collaboration machine.
+          </div>
+      
+          <div class="person">
+            <img src="images/profile-2.jpg" alt="bruce-mckenzie">
+            <div>
+              <div class="name">Bruce McKenzie</div>
+              <div class="position">Founder & CEO, Huddle</div>
+            </div>
+          </div>
+
+        </div>
+    
+        <div class="card">
+
+          <div class="text">
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+            become a well-oiled collaboration machine.
+          </div>
+      
+          <div class="person">
+            <img src="images/profile-3.jpg" alt="iva-boyd">
+            <div>
+              <div class="name">Iva Boyd</div>
+              <div class="position">Founder & CEO, Huddle</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  
+      <div class="block-e">
+
+        <h1>Get early access today</h1>
+  
+        <div>
+          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+          questions, our support team would be happy to help you.
+        </div>
+
+        <input oninput="onClick()" id="input-email" type="email" name="email-enter" placeholder="example@email.com">
+        <div id="error" class="status">Please enter a valid email address.</div>
+    
+        <button class="btn">Get Started For Free</button>
+
+      </div>
+      
+    </main>
+
+    <footer>
+      
+      <div class="col-a">
+        <img class="logo" src="images/logo.svg" alt="fylo-logo">
+        <img class="location" src="images/icon-location.svg" alt="icon-location">
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua
+        </div>
+      </div>
+  
+      <div class="col-b">
+        <div>
+          <img class="phone" src="images/icon-phone.svg" alt="icon-phone">
+          <div class="phone">+1-543-123-4567</div>
+        </div>
+
+        <div>
+          <img class="email" src="images/icon-email.svg" alt="icon-email">
+          <div class="email">example@fylo.com</div>
+        </div>
+      </div>
+  
+      <div class="col-c">
+        <div>About Us</div>
+        <div>Jobs</div>
+        <div>Press</div>
+        <div>Blog</div>
+      </div>
+  
+      <div class="col-d">
+        <div>Contact Us</div>
+        <div>Terms</div>
+        <div>Privacy</div>
+      </div>
+
+      <div class="col-e">
+
+        <!-- Icons by IcoMoon.io -->
+
+        <img id="facebook" src="images/facebook.svg" alt="icon-facebook" onmouseover="mouseOverArrow('facebook')" onmouseout="mouseOutArrow('facebook')">
+        <img id="twitter" src="images/twitter.svg" alt="icon-twitter" onmouseover="mouseOverArrow('twitter')" onmouseout="mouseOutArrow('twitter')">
+        <img id="instagram" src="images/instagram.svg" alt="icon-instagram" onmouseover="mouseOverArrow('instagram')" onmouseout="mouseOutArrow('instagram')">
+        
+      </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/Subject6735">Deme Maráki</a>.
+      </div>      
+
+    </footer>
+    
+  </body>
+</html>
