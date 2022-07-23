@@ -6,7 +6,6 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -21,20 +20,9 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
-
-Desktop:
-
-![](screenshots/screenshot_desktop.jpg)
-
-Mobile:
-
-![](screenshots/screenshot_mobile.jpg)
-
 ### Links
 
-- Repository URL: [GitHub Repository](https://github.com/Subject6735/fylo-dark-theme-landing-page)
-- Live Site URL: [Live Site](https://subject6735.github.io/fylo-dark-theme-landing-page/)
+- [Live site](https://mdeme01.github.io/fylo-dark-theme-landing-page/)
 
 ## My process
 
@@ -48,4 +36,4 @@ Mobile:
 
 ## Author
 
-- Frontend Mentor - [@Subject6735](https://www.frontendmentor.io/profile/Subject6735)
+- Frontend Mentor - [@mdeme01](https://www.frontendmentor.io/profile/mdeme01)
